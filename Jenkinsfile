@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/oren1984/your-java-repo.git'
+                git 'https://github.com/oren1984/your-java-repo.git', credentialsId: 'your-jenkins-credential'
             }
         }
 
