@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git(
-                    url: 'https://github.com/oren1984/your-java-repo.git',
+                    url: 'https://github.com/oren1984/hello-java-repo.git',
                     credentialsId: 'your-jenkins-credential'  // ודא שהמזהה תואם
                 )
             }
