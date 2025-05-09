@@ -10,6 +10,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git(
+                    branch: 'main',
                     url: 'https://github.com/oren1984/hello-java-repo.git',
                     credentialsId: 'your-jenkins-credential'  // ודא שהמזהה תואם
                 )
